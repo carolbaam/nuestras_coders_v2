@@ -1,7 +1,7 @@
 
 var data = {
     "CDMX": {
-            "generaciones_estudiantes": {
+        "generaciones_estudiantes": {
                 "quinta": {
                 "nombre": "Cool dev",
                 "estudiantes":  [
@@ -991,55 +991,3 @@ var data = {
       }
     }
 };
-
-var filtrarElementos = function (e) {
-    var selectedIndex = e.target.selectedIndex;
-    //manejamos los atributos data 
-    var sede = e.target[selectedIndex].dataset.sede;
-    var numeroGeneracion = e.target[selectedIndex].dataset.generacion;
-    obtenerDatos(data,sede,numeroGeneracion)
-    
-}
-var pintarCoders = function(nombre,generacion,correo,turno){
-    var contenedorCoders = document.getElementById("contenedor-coders");
-    var coder = document.createElement("div");
-    var fotoCoder = document.createElement("img");
-    var nombreCoder = document.createElement("p");
-    var mailCoder = document.createElement("p");
-    var contenedorTurnoGeneracion = document.createElement("div");
-    var generacionCoder = document.createElement("span");
-    var turnoCoder = document.createElement("span");
-
-    fotoCoder.src = "http://lorempixel.com/200/200/people/";
-    fotoCoder.classList ="foto-coder";
-    nombreCoder.textContent = nombre;
-    nombreCoder.classList=("nombre");
-    mailCoder.textContent = correo;
-    mailCoder.classList=("mail");    
-    generacionCoder.textContent = generacion
-    generacionCoder.classList=("generacion");    
-    turnoCoder.textContent = turno;
-    turnoCoder.classList=("turno");
-    coder.classList = "coder";
-
-    contenedorTurnoGeneracion.appendChild(generacionCoder)
-    contenedorTurnoGeneracion.appendChild(turnoCoder);
-    coder.appendChild(fotoCoder)
-    coder.appendChild(nombreCoder)
-    coder.appendChild(mailCoder)
-    coder.appendChild(contenedorTurnoGeneracion);
-    contenedorCoders.appendChild(coder);
-}
-var obtenerDatos = function(datos,sede,generacion){
-    document.getElementById("contenedor-coders").innerHTML = "";
-    
-    var data = (datos[sede]["generaciones_estudiantes"][generacion]["estudiantes"])
-     for(var i = 0 ; i < data.length; i += 1){
-        var nombre = (data[i].nombre);
-        var mail = data[i].mail
-        var generacion  = (data[i].generacion);
-        var turno = (data[i].turno);
-        pintarCoders(nombre,mail,turno,generacion);
-    }
-}
-document.getElementById("filtro").addEventListener("change",filtrarElementos)

@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/main.css">
-    <title>UNO</title>
+    <title>Nuestras Coders </title>
 </head>
 <body>
     <main>
         <h1>Laboratoria <strong> Código que transforma</strong> </h1>
         <h2>Conoce a las coders</h2>
-        <select id="filtro">
+        <select id="filtro" onchange="filtrarElementos(event)">
             <option >Selecciona una sede </option>
             <option value = "cdmx5" data-sede="CDMX" data-generacion ="quinta">Ciudad de México.Quinta generación</option>
             <option value = "cdmx4" data-sede="CDMX" data-generacion ="cuarta">Ciudad de México. Cuarta generación</option>
             <option value = "cdmx3" data-sede="CDMX" data-generacion ="tercera">Ciudad de México. Tercera generación</option>
             <option value = "lim1" data-sede="Lima" data-generacion ="primera">Lima, Primera Generacion</option>
             <option value = "lim2" data-sede="Lima" data-generacion ="segunda">Lima, Segunda Generación</option>
-            
         </select>
         <section id="contenedor-coders">
         <div class="coder plantilla">

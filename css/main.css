@@ -36,3 +36,6 @@ select#filtro, #filtro option{
     border-radius: 50%;
     overflow: auto;
 }
+.plantilla{
+    background:green;
+}

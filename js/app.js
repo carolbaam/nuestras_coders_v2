@@ -1,8 +1,8 @@
 
 var data = {
     "CDMX": {
-            "generaciones_estudiantes": {
-                "quinta": {
+        "generaciones_estudiantes": {
+            "quinta": {
                 "nombre": "Cool dev",
                 "estudiantes":  [
                     {
@@ -10,25 +10,25 @@ var data = {
                     "mail": "patricia.dione@gmail.com",
                     "turno": "AM",
                     "Generacion": "MEX2017-2"
-                },
-                {
+                  },
+                  {
                     "nombre": "Laura Isabel Martínez Cortés",
                     "mail": "laura.render.03@gmail.com",
                     "turno": "AM",
                     "Generacion": "MEX2017-2"
-                },
-                {
+                 },
+                 {
                     "nombre": "Tania Herrera Rodríguez",
                     "mail": "herrerart19@outlook.com",
                     "turno": "AM",
                     "Generacion": "MEX2017-2"
-                },
-                {
+                 },
+                 {
                     "nombre": "Raquel Martinez Gonzalez",
                     "mail": "raquel_martinez_303@hotmail.com",
                     "turno": "AM",
                     "Generacion": "MEX2017-2"
-                },
+                 },
                 {
                     "nombre": "Paulina Vargas Pérez-Gavilán",
                     "mail": "pvpg@live.com.mx",
@@ -619,7 +619,7 @@ var data = {
                 }
                 ]
                 },
-                "cuarta": {
+            "cuarta": {
                 "nombre": "wondevWomen",
                 "estudiantes":[
                     {
@@ -933,12 +933,12 @@ var data = {
             "tercera": {
                 "nombre": "xd gen",
                 "estudiantes": [
-                { "nombre": "sandra 3", "edad": 25 },
-                { "nombre": "andy 3", "edad": 25 }
+                    { "nombre": "sandra 3", "edad": 25 },
+                    { "nombre": "andy 3", "edad": 25 }
                 ]
             }
-            },
-            "staff": {
+        },
+        "staff": {
             "directora": "Gabriela",
             "profes": [
                 {
@@ -950,8 +950,8 @@ var data = {
                 "area": "UX"
                 }
             ]
-            }
-            },
+        }
+    },
     "Lima": {
       "generaciones_estudiantes": {
         "primera": {

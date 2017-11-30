@@ -1032,14 +1032,13 @@ var pintarCoders = function(nombre,generacion,correo,turno){
 }
 var obtenerDatos = function(datos,sede,generacion){
     document.getElementById("contenedor-coders").innerHTML = "";
-    
-    var data = (datos[sede]["generaciones_estudiantes"][generacion]["estudiantes"])
-     for(var i = 0 ; i < data.length; i += 1){
-        var nombre = (data[i].nombre);
+    var data = datos[sede]["generaciones_estudiantes"][generacion]["estudiantes"];
+    for(var i = 0 ; i < data.length; i += 1){
+        var nombre = data[i].nombre;
         var mail = data[i].mail
-        var generacion  = (data[i].generacion);
-        var turno = (data[i].turno);
+        var generacion  = data[i].generacion;
+        var turno = data[i].turno;
         pintarCoders(nombre,mail,turno,generacion);
     }
 }
-document.getElementById("filtro").addEventListener("change",filtrarElementos)
+// document.getElementById("filtro").addEventListener("change",filtrarElementos)
